@@ -5,7 +5,7 @@ FROM node:22-alpine AS builder
 WORKDIR /app
 
 # Copy the package.json and package-lock.json files
-COPY app/docs/ ./
+COPY . ./
 
 # Install git (required for VitePress build)
 RUN apk add --no-cache git
