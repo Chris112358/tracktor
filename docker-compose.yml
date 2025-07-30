@@ -12,7 +12,7 @@ services:
     depends_on:
       - db
     restart: unless-stopped
-    volumes:
+   # volumes:
       #- ./app:/app
   db:
     image: "nouchka/sqlite3:latest"
